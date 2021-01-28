@@ -58,16 +58,19 @@ export default function Events() {
         <Event title="Iweek CUU Hackathon" place="Online" type="organizer/mentor"></Event>
         <Event title="BackToCouch VideoGames Conf" place="Chihuahua MX" type="attended"></Event>
         <Event title="Escuela Microscopia CIMAV" place="Chihuahua MX" type="attended">I helped organize an online microscopy event.</Event>
+        <Event title="Molus.co Podcast Workshop" place="Online" type="workshop"></Event>
       </ul>
       <Divider />
       <Year>2019</Year>
       <ul>
+        <Event title="Thunderstruck" place="Monterrey MX" type="attended">Videogames tournament, I covered the event via streaming with The New Game Order Crew</Event>
         <Event title="Casas Grandes University" place="Casas Grandes MX" type="talk"></Event>
         <Event title="Encuentro Juventudes Ichijuv" place="Chihuahua MX" type="talk">I gave a couple of talks around the state of Chihuahua</Event>
         <Event title="Border Tech" place="Juarez MX" type="talk">I put a stand with The New Game Order about streaming videogames.</Event>
         <Event title="Indies MX" place="Juarez MX" type="talk">I gave a talk with The New Game Order about videogames industry.</Event>
         <Event title="Tapalpa Magik" place="Tapalpa MX" type="attended">Magic Event Convention in Tapalpa Jalisco.</Event>
         <Event title="NAMM" place="Los Angeles, CA" type="attended">Music Convention</Event>
+        <Event title="Molus.co Podcast Workshop" place="Chihuahua MX" type="workshop"></Event>
       </ul>
       <Divider />
       <Year>2018</Year>
@@ -119,8 +122,14 @@ export default function Events() {
       <Divider />
       <Year>2015</Year>
       <ul>
+        <Event title="Elixir Conf" place="Austin TX" type="attended"></Event>
         <Event title="HackCUU Hackathon by MLH" place="Chihuahua MX" type="organizer"></Event>
         <Event title="Startup Weekend Education CUU" place="Chihuahua MX" type="mentor"></Event>
+        <Event title="Programming Workshop" place="Chihuahua MX" type="workshop">I gave a programming workshop for a local elementary school.</Event>
+        <Event title="Ableton Workshop ITCHII" place="Chihuahua MX" type="workshop">I gave a music workshop for a local university.</Event>
+        <Event title="Royal Congress ITCH" place="Chihuahua MX" type="talk">Talk for local university about marketing.</Event>
+        <Event title="Talk UACJ" place="Juarez MX" type="talk"></Event>
+
       </ul>
       <Divider />
       <Year>2014</Year>

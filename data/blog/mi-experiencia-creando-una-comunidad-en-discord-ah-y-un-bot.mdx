@@ -1,0 +1,110 @@
+---
+title: 'Mi experiencia creando una comunidad en Discord. Ah y un Bot 🤖'
+publishedAt: '2020-09-21'
+summary: 'Te comparto lo aprendido en Discord haciendo un Bot para la comunidad.'
+image: '/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedabanner.jpg'
+---
+
+<Image
+  alt={`magiobarbon`}
+  src={`/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedabanner.jpg`}
+  width={1920}
+  height={1080}
+  priority
+/>
+
+Tengo ya unos meses sin escribir y la verdad es que he enfocado la mayoría de mi tiempo en trabajo. He estado haciendo principalmente streamings para algunos clientes y en general lo que creo que sé hacer mejor: Resolver Problemas.
+A penas justo en estos días he tenido un poco más de respiro para sentarme a escribir y contarles algo de lo que he andado haciendo.
+
+[El último post](https://magiobus.com/blog/como-un-stream-de-videojuegos-me-llevo-a-hacer-una-empresa-en-un-sotano-bien-feo/) que escribí fue de cierto modo la historía de [Molus.co](https://molus.co/) y de [The New Game Order(TNGO)](https://tngo.vg/). En los últimos meses, TNGO ha tornado más su comunidad a [Discord](https://discord.com/invite/2q8zTVb) y eso ha sido un fenómeno re interesante.
+
+Discord es esta aplicación donde tienes un conjunto de chats de texto y voz. Tiene ya un rato que se ha popularizado principalmente entre gamers, por que es bien fácil entrar con tus amigos a un chat de voz mientras juegas retas de algún videojuego. Tan así, que fue la la app social más descargada en iOS hace unos días.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">number 1 “social networking app” on iOS today in the US...for the first time ever! <br/><br/>thank you everyone for getting us here 🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳🎉🥳 <a href="https://t.co/j19g1dFe6E">pic.twitter.com/j19g1dFe6E</a></p>&mdash; Discord (@discord) <a href="https://twitter.com/discord/status/1307067423884013570?ref_src=twsrc%5Etfw">September 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Poco a poco se ha hecho una comunidad bastante chevere y en este caso la comunidad de TNGO, se ha ido armando despacito con gente que nos conocía de las transmisiones que hacemos cada miércoles o gente random que llegó en algún momento. Algo que me gusta mucho es que la mismas personas le han dado forma al servidor.
+
+Un día me di cuenta que siempre hablábamos de comida e inicié el canal #tngordos. Es uno de los canales que hasta la fecha siempre están activos y tiene siempre posts de lo que todo mundo anda comiendo. Ya hasta hay alguien que hace dietas personalizadas para los que quieren bajar de peso.
+
+También existen otros canales como #tngo-memes #tngo-miedo #tngo-coding y #tngo-arte. Ya se imaginarán con el nombre para que es cada uno.
+
+Otro canal que inició con mucha fuerza, fue el canal de #tngo-maincra. Monté con la ayuda de [@JFEspanolito](https://twitter.com/JFEspanolito) un servidor de minecraft para que la comunidad pudiera jugar a cualquier hora del día y en menos de un mes ya teníamos un Oxxo, 3 lineas de metro, Acapulco y Centro Comunitario.
+
+Debo de decir que no sabía nada de minecraft antes de montar el servidor y vaya que me estaba perdiendo de mucho. Tan así que hasta el grito de Independencia dimos el pasado 16 de septiembre 🇲🇽.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MrFjuXWv4_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Así como surgió el canal de minecraft, este dio pasó a otros juegos como among us, fall guys y world of warcraft.
+
+Discord tiene la habilidad de activar bots que hagan cosas interesantes en el server. Entre los más útiles en mi opinion son [Rythm](https://rythmbot.co/), [SimplePoll](https://simplepoll.rho.sh/) y [MEE6](https://mee6.xyz/).
+
+Ryhtm permite poner música de Youtube, Spotify o Soundcloud en cualquier canal de voz, es super útil para cuando estás jugando con tus amigos y quieres escuchar música con ellos. SimplePoll sirve para hacer encuestas y MEE6 es un multibot donde su función más útil es un sistema de niveles.
+
+El sistema de niveles que hace MEE6, básicamente consiste en que cada vez que alguien escribe algo, gana experiencia. Esa experiencia luego te va dando niveles, y en la versión de paga puedes hacer que cuando alguien sea por ejemplo nivel 10, automáticamente lo asigne con los usuarios de nivel 10 y que ganen algunos otros privilegios que no tenían anteriormente.
+
+Como estoy bien loquito y no quería pagar los 5 usd mensuales del MEE6, me puse a investigar como hacer mi propio bot de discord.
+
+Uno de los personajes ficticios de TNGO es Andromeda, un robot futurista con forma de chica que le gustan los vegetales y recluta gente para que se diviertan y no mueran de aburrimiento. Así es que decidí darle vida a Andromeda en un bot de Discord.
+
+<BlogImage
+  alt={`andromedaart`}
+  src={`/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedaart.png`}
+  width={2000}
+  height={2000}
+  caption="Andromeda, Robot Futurista come vegetales. Creada por @midrava"
+/>
+
+Lo primero que agregué fue un comando de ayuda para que los demás supieran como utilizar el bot. Entonces cuando se escribe !tngo-help en cualquier parte del servidor de Discord, muestra las cosas que se pueden hacer.
+
+<BlogImage
+  alt={`andromedaart`}
+  src={`/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedahelp.jpg`}
+  width={446}
+  height={449}
+  caption="!tngo-help"
+/>
+
+Al día de hoy Andromeda tiene el mismo sistema de niveles que tiene MEE6 con la ventaja de que hace asignación de roles sin tener que pagar un sólo centavo.
+Con !tngo-rank puede decirte que nivel eres y con #tngo-levels muestra el top10 de usuarios en el servidor.
+
+<BlogImage
+  alt={`andromedaranks`}
+  src={`/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedaranks.jpg`}
+  width={447}
+  height={511}
+  caption="!tngo-rank"
+/>
+
+Además le agregué la posibilidad de hacer encuestas,  de tirar dados virtuales y lo conecté a un calendario que hice en google con las actividades semanales que hay en la comunidad.
+
+La verdad el sistema de niveles ha sido todo un éxito y mucha gente del server compite diariamente posteando memes, fotos de comida o simplemente platicando con sus amigos.
+
+Luego me di cuenta que por las mañanas varias personitas se daban los buenos días todo el tiempo. Así es que agregué a Andromeda una pequeña inteligencia artificial con una librería llamada [nlp.js](https://github.com/axa-group/nlp.js?utm_source=recordnotfound.com) que permite saber un poco el contexto de lo que escriben las personas cuando etiquetan a Andromeda. Así es que si ahora le dices "buenos días @andromeda" te contesta sin problema. Esto aplica a buenas tardes, buenas noches, frases de odio, amor, saludos o despedidas.
+
+Esto también permitió que en vez de estar recordando comandos como !tngo-rank para checar tu nivel, ahora simplemente se puede escribir "@andromeda, dame mi nivel" y andromeda puede dar el nivel sin problema.
+
+También he estado agregando funcionalidades extras como recomendaciones de películas y juegos, entre algunas otras cosillas.
+
+<Image
+  alt={`andromedaexamples`}
+  src={`/static/images/blog/mi-experiencia-creando-una-comunidad-en-discord-ah-y-un-bot/andromedaexamples.jpg`}
+  width={1422}
+  height={560}
+/>
+
+Ha sido divertido y de mucho aprendizaje hacer el bot, pero lo más importante es que surgió de un problema: "Querer tener asignación de roles automáticos sin tener que pagar MEE6"
+
+Cuando se hacen proyectos por problemas que tu mismo tienes es mucho más divertido y le pones mucho más empeño, por que son cosas que en realidad te van a servir.
+
+Estos días he estado trabajando en un script para que haga posts automáticos cada día en mi cuenta de instagram, esto por que no tengo tiempo muchas veces de subir contenido y pues que mejor que una maquina que lo haga por mi.
+
+Y ahi viene la pregunta interesante...
+Que  cosas que hago diariamente podría automatizar ?
+
+Si quieres unirte al servidor de Discord y probar a andromeda, eres totalmente bienvenid@, sólo da [click aquí](https://discord.com/invite/F9KaNUD).
+
+Gracias por leerme. Espero que te haya gustado este post y si tienes igual alguna duda sobre el bot, comunidad o lo que sea, puedes encontrarme en mis redes sociales como [@magiobus](https://www.twitter.com/magiobus) o puedes dejar un comentario aquí abajito  y con gusto te respondo.
+
+También puedes suscribirte a este blog en el botón de hasta abajo y te mando luego los posts que voy escribiendo a tu correo
+
+Nos vemos en el siguiente post de El Magio Blog 🧙‍♂️✌️

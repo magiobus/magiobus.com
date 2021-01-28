@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Tweet from 'react-tweet-embed';
 
+import BlogImage from '@/components/BlogImage';
+import SoundCloudPlayer from '@/components/SoundCloudPlayer';
 import ProsCard from '@/components/ProsCard';
 import ConsCard from '@/components/ConsCard';
 import Gumroad from '@/components/metrics/Gumroad';
@@ -27,6 +29,8 @@ const CustomLink = (props) => {
 
 const MDXComponents = {
   Image,
+  BlogImage,
+  SoundCloudPlayer,
   a: CustomLink,
   Analytics,
   ConsCard,

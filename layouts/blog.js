@@ -15,9 +15,9 @@ const discussUrl = (slug) =>
 export default function BlogLayout({ children, frontMatter }) {
   return (
     <Container
-      title={`${frontMatter.title} – Lee Robinson`}
+      title={`${frontMatter.title} – Magio Bustillos`}
       description={frontMatter.summary}
-      image={`https://leerob.io${frontMatter.image}`}
+      image={`localhost:3000${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
@@ -28,15 +28,15 @@ export default function BlogLayout({ children, frontMatter }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
           <div className="flex items-center">
             <Image
-              alt="Lee Robinson"
-              height={24}
-              width={24}
+              alt="Magio Bustillos"
+              height={48}
+              width={48}
               src="/avatar.jpg"
               className="rounded-full"
             />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
-              {'Lee Robinson / '}
+              {'Magio Bustillos / '}
               {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
             </p>
           </div>
