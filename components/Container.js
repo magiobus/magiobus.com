@@ -17,8 +17,8 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: 'Magiobus - Magio Bustillos',
-    description: `Developer, VR Enthusiast, Content Creator`,
-    image: 'https://leerob.io/static/images/banner.png',
+    description: `Developer, Techie , Creator`,
+    image: 'https://magiobus.com/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
