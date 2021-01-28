@@ -2,7 +2,7 @@ export default async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
+    return res.status(400).json({ error: 'Email es requerido' });
   }
 
   try {
@@ -12,7 +12,7 @@ export default async (req, res) => {
       {
         body: JSON.stringify({
           email,
-          tags: ['leerob.io']
+          tags: ['magiobus.com']
         }),
         headers: {
           Authorization: `Token ${API_KEY}`,
@@ -27,7 +27,7 @@ export default async (req, res) => {
 
       if (text.includes('already subscribed')) {
         return res.status(400).json({
-          error: `You're already subscribed to my mailing list.`
+          error: `Ya estás registrado al blog`
         });
       }
 

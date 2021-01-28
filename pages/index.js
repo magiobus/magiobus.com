@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 import Container from '../components/Container';
 import NowPlaying from '@/components/NowPlaying';
+import LatestArticles from '@/components/LatestArticles';
+import Subscribe from '@/components/Subscribe';
 
-export default function Home() {
+
+export default function Home({posts}) {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
@@ -30,11 +35,21 @@ export default function Home() {
           Ver los diferentes <Link href="/about"><a>Proyectos</a></Link> en los que ando involucrado. <br />
         </p>
 
-        <p className="prose text-lg text-gray-600 dark:text-gray-400 mb-4"> Si necesitas contactarme, siempre me puedes mandar un&nbsp;
+        <p className="prose text-lg text-gray-600 dark:text-gray-400 mb-16"> Si necesitas contactarme, siempre me puedes mandar un&nbsp;
           <Link href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&screen_name=magiobus&tw_p=tweetbutton"><a>Tweet</a></Link> o un&nbsp;
           <Link href="mailto:magio@magiobus.com"><a>Email ✉️</a></Link>
         </p>
+
+        <LatestArticles posts={posts}/>
+
+        <Subscribe/>
+
       </div>
     </Container>
   );
+}
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog');
+  return { props: { posts } };
 }

@@ -12,7 +12,7 @@ export default function About() {
         </h1>
         <div className="mb-8 prose leading-6 text-lg text-gray-600 dark:text-gray-400">
           <p>
-            Hola, Soy Magio Bustillos. Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologías.&nbsp;
+            <strong>Hola, Soy Magio Bustillos.</strong> Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologías.&nbsp;
           </p>
           <p>
             Hago proyectos de media y tecnología en mi pequeño estudio llamado&nbsp;
