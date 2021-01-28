@@ -1,16 +1,10 @@
 import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
+import { es } from 'date-fns/locale'
 
 import Container from '@/components/Container';
 import Subscribe from '@/components/Subscribe';
 import ViewCounter from '@/components/ViewCounter';
-
-const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/master/data/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
-  )}`;
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
@@ -37,37 +31,20 @@ export default function BlogLayout({ children, frontMatter }) {
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
               {'Magio Bustillos / '}
-              {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+              {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy', { locale: es })}
             </p>
           </div>
           <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
-            {frontMatter.readingTime.text}
+            {Math.round(frontMatter.readingTime.minutes)} min de lectura
             {` • `}
             <ViewCounter slug={frontMatter.slug} />
           </p>
         </div>
-        <div className="prose dark:prose-dark max-w-none w-full">
+        <div className="prose dark:prose-dark max-w-none w-full text-lg">
           {children}
         </div>
         <div className="mt-8">
           <Subscribe />
-        </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={discussUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a
-            href={editUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
-          </a>
         </div>
       </article>
     </Container>

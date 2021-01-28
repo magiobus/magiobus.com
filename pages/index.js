@@ -21,16 +21,16 @@ export default function Home() {
             </h1>
           </div>
         <NowPlaying />
-        <h2 className="prose text-gray-600 dark:text-gray-400 mb-4">
+        <h2 className="prose text-lg text-gray-600 dark:text-gray-400 mb-4">
           Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologias. <br />
         </h2>
-        <h2 className="prose text-gray-600 dark:text-gray-400 mb-4">
+        <p className="prose text-lg text-gray-600 dark:text-gray-400 mb-4">
           En este pedacito de internet puedes leer lo que escribo en mi <Link href="/blog"><a>Blog.</a></Link> <br />
           Escuchar la <Link href="/music"><a>Música</a></Link> que hago para mi u otros artistas. <br />
-          Ver los diferentes <Link href="/about#projects"><a>Proyectos</a></Link> en los que ando involucrado. <br />
-        </h2>
+          Ver los diferentes <Link href="/about"><a>Proyectos</a></Link> en los que ando involucrado. <br />
+        </p>
 
-        <p className="prose text-gray-600 dark:text-gray-400 mb-4"> Si necesitas contactarme, siempre me puedes mandar un&nbsp;
+        <p className="prose text-lg text-gray-600 dark:text-gray-400 mb-4"> Si necesitas contactarme, siempre me puedes mandar un&nbsp;
           <Link href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&screen_name=magiobus&tw_p=tweetbutton"><a>Tweet</a></Link> o un&nbsp;
           <Link href="mailto:magio@magiobus.com"><a>Email ✉️</a></Link>
         </p>
