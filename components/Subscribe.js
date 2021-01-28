@@ -42,24 +42,23 @@ export default function Subscribe() {
     inputEl.current.value = '';
     setForm({
       state: 'success',
-      message: `Hooray! You're now on the list.`
+      message: `Yei! Gracias por suscribirte .`
     });
   };
 
   return (
     <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
       <h5 className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
-        Subscribe to the newsletter
+        Suscríbete a mi blog
       </h5>
       <p className="my-1 text-gray-800 dark:text-gray-200">
-        Get emails from me about web development, tech, and early access to new
-        articles.
+        Recibe los últimos articulos directamente en tu buzón.
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
         <input
           ref={inputEl}
           aria-label="Email for newsletter"
-          placeholder="tim@apple.com"
+          placeholder="Tu Correo Electrónico"
           type="email"
           autoComplete="email"
           required
@@ -69,7 +68,7 @@ export default function Subscribe() {
           className="flex items-center justify-center absolute right-1 top-1 px-4 font-bold h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
           type="submit"
         >
-          {form.state === 'loading' ? <LoadingSpinner /> : 'Subscribe'}
+          {form.state === 'loading' ? <LoadingSpinner /> : 'Suscríbete'}
         </button>
       </form>
       {form.state === 'error' ? (
@@ -77,13 +76,10 @@ export default function Subscribe() {
       ) : form.state === 'success' ? (
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
-        <p className="text-sm text-gray-800 dark:text-gray-200">
-          {`${subscriberCount || '-'} subscribers – `}
-          <Link href="/newsletter">
-            <a>27 issues</a>
-          </Link>
-        </p>
-      )}
+            <p className="text-sm text-gray-800 dark:text-gray-200">
+              {/* {`${subscriberCount || '-'} suscriptores – `} */}
+            </p>
+          )}
     </div>
   );
 }
