@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
           <Link href="/about">
             <a className="text-gray-500 hover:text-gray-600 transition">
-              About
+              Acerca
             </a>
           </Link>
           <Link href="/blog">

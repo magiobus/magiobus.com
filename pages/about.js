@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import Container from '@/components/Container';
+import ProjectCard from '@/components/ProjectCard'
 
 const Talk = ({ title, link, children }) => (
   <>
@@ -36,95 +37,74 @@ const Talk = ({ title, link, children }) => (
 
 export default function About() {
   return (
-    <Container title="About – Lee Robinson">
+    <Container title="Acerca de – Magio Bustillos">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          About Me
+          Acerca de Mí
         </h1>
         <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
           <p>
-            Hey, I’m Lee. I'm a developer, writer, and the creator of&nbsp;
-            <a
-              href="https://masteringnextjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mastering Next.js
-            </a>
-            &nbsp;and&nbsp;
-            <a
-              href="https://react2025.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React 2025.
-            </a>
-            &nbsp;I work at ▲Vercel as a Solutions Architect.
+            Hola, Soy Magio Bustillos. Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologías.&nbsp;
           </p>
           <p>
-            I’ve spoken across the country at conferences and meet-ups about
-            front-end development, design, and recruiting. I write about
-            development, tech careers, and my personal life on&nbsp;
-            <Link href="/newsletter">
-              <a>my newsletter.</a>
+            Hago proyectos de media y tecnología en mi pequeño estudio llamado&nbsp;
+            <Link href="http://molus.co/">
+              <a>Molus.co</a>
+            </Link>
+            &nbsp; También administro una comunidad llamada&nbsp;
+            <Link href="http://tngo.vg/">
+              <a>The New Game Order</a>
+            </Link>
+            &nbsp;dónde charlo regularmente con algunos amigos acerca de la industria de videojuegos.
+          </p>
+          <p>
+            Crecí en una ciudad pequeña cercana a la frontera con Estados Unidos llamada Chihuahua México,
+            ahí estudié la universidad y me gradué de ingeniería en sistemas computacionales. 
+            Desde entonces siempre he estado envuelto en temás de tecnología y emprendimiento.
+          </p>
+
+          <p>
+            He tenido la fortuna de participar/mentorear/organizar un montón de eventos como meetups y hackathons por tódo México y US.
+            He conocido grandes personas gracias a estos eventos y más que nada he tenido el aprendizaje de siempre hacer comunidad y compartir con los demás.
+            &nbsp;
+            <Link href="/eventslist">
+              <a>(Por acá llevo un tracking de esos eventos).</a>
             </Link>
           </p>
+
           <p>
-            I grew up in small-town Iowa and went to school at Iowa State,
-            graduating with a degree in Computer Engineering. I spend my free
-            time playing music, creating videos, and enjoying time with friends
-            and family in Des Moines, IA.
+            Mi tiempo libre lo paso jugando videojuegos, haciendo música y aprendiendo siempre algo nuevo.
           </p>
         </div>
-        <h2 className="font-bold text-3xl tracking-tight mb-4 text-black dark:text-white">
-          Conference Talks
-        </h2>
-        <Talk
-          title="Data Fetching with Next.js"
-          link="https://www.youtube.com/watch?v=Sz7SImkdIpo&feature=youtu.be&t=6063"
-        >
-          Next.js is a hybrid React framework allowing you to choose your data
-          fetching strategy on a per-page basis. In this talk, you’ll learn more
-          about CSR (Client-Side Rendering), SSR (Server-Side Rendering), SSG
-          (Static-Site Generation), ISR (Incremental Static Regeneration), and
-          when to use each one. I’ll also give a quick introduction to Next.js
-          and share some of the main features of the framework.
-        </Talk>
-        <Talk
-          title="Building Static Sites with Prisma and Next.js"
-          link="https://youtu.be/z3rmZbOEBCM?t=273"
-        >
-          During this workshop, you'll learn how to integrate Prisma with
-          Next.js and build a statically-generated site that displays a list of
-          your favorite songs. We'll use Chakra UI for styling and deploy our
-          site with Vercel.
-        </Talk>
-        <Talk
-          title="Building Component Libraries with a Monorepo"
-          link="/building-component-libraries-with-a-monorepo.pdf"
-        >
-          Learn why your organization needs a component library and discover the
-          best practices for building, scaling, and adopting it across all
-          platforms. We'll be using industry-standard technology (React,
-          JavaScript, Storybook) alongside cutting-edge solutions (CSS-in-JS,
-          Monorepo).
-        </Talk>
-        <Talk
-          title="Recruiting Engineers (From An Engineer's Perspective)"
-          link="/recruiting-engineers-talent42-lee-robinson.pdf"
-        >
-          Hiring talent is becoming increasingly difficult with low unemployment
-          rates and the tech industry booming. What you can do to stick out?
-          Learn from an engineer who's been involved on both sides - both as a
-          candidate and with hiring - on what candidates really want out of a
-          position.
-        </Talk>
-        <iframe
-          height="280"
-          src="https://www.google.com/maps/d/embed?mid=1QOGi-u8d4vwoQ4vC4zQjKxrSfsDIQdOK&hl=en"
-          title="Lee's Travel Map"
-          width="100%"
-        />
+        
+       
+       <div id="projects">
+          <h2 className="font-bold text-3xl tracking-tight mb-4 text-black dark:text-white">
+            Proyectos
+          </h2>
+          <ProjectCard
+            title="Molus.co"
+            description="Pequeño estudio enfocado principalmente en proyectos de video/audio/streaming."
+            href="https://molus.co/"
+            imageUrl="/static/images/moluscologo.jpg"
+          />
+          <br/>
+          <ProjectCard
+            title="The New Game Order"
+            description="Comunidad de Videojuegos y cultura geek con diversos contenidos entre ellos un liveshow semanal."
+            href="https://tngo.vg/"
+            imageUrl="/static/images/tngologo.jpg"
+
+          />
+          <br/>
+          <ProjectCard
+            title="TrabajosChihuahua.com"
+            description="Lista de vacantes con actualización diaria para trabajos en el estado de Chihuahua México."
+            href="https://trabajoschihuahua.com/"
+            imageUrl="/static/images/trabajoschihuahualogo.png"
+          />
+       </div>
+       
       </div>
     </Container>
   );
