@@ -11,7 +11,7 @@ export default function BlogLayout({ children, frontMatter }) {
     <Container
       title={`${frontMatter.title} – Magio Bustillos`}
       description={frontMatter.summary}
-      image={`magiobus.com${frontMatter.image}`}
+      image={`https://magiobus.com${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
