@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Tweet from 'react-tweet-embed';
 
 import BlogImage from '@/components/BlogImage';
 import SoundCloudPlayer from '@/components/SoundCloudPlayer';
