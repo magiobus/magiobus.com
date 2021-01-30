@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import Link from 'next/link';
 import useSWR from 'swr';
 import format from 'comma-number';
-import { trackGoal } from 'fathom-client';
 
 import fetcher from '@/lib/fetcher';
 import SuccessMessage from '@/components/SuccessMessage';
@@ -38,7 +37,6 @@ export default function Subscribe() {
       return;
     }
 
-    trackGoal('JYFUFMSF', 0);
     inputEl.current.value = '';
     setForm({
       state: 'success',
