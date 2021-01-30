@@ -19,6 +19,7 @@ export default function Home({posts}) {
               alt="Magiobus"
               width={200}
               height={200}
+              priority
               className="rounded-full"
             />
             <h1 className="font-bold text-3xl md:text-5xl px-4 sm: my-2 tracking-tight text-black dark:text-white">
@@ -27,7 +28,7 @@ export default function Home({posts}) {
           </div>
         <NowPlaying />
         <h2 className="prose text-lg text-gray-600 dark:text-gray-400 mb-4">
-          Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologias. <br />
+          Soy un desarrollador al que le encanta resolver problemas y probar nuevas tecnologías. <br />
         </h2>
         <p className="prose text-lg text-gray-600 dark:text-gray-400 mb-4">
           En este pedacito de internet puedes leer lo que escribo en mi <Link href="/blog"><a>Blog.</a></Link> <br />

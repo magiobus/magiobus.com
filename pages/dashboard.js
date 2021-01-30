@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import Analytics from '@/components/metrics/Analytics';
 import Buttondown from '@/components/metrics/Buttondown';
 import Container from '@/components/Container';
 import GitHub from '@/components/metrics/Github';
@@ -37,7 +36,6 @@ export default function Dashboard() {
           <YouTube />
         </div>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-          <Analytics />
           <GitHub />
         </div>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">

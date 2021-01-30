@@ -66,10 +66,11 @@ export default function About() {
           />
           <br/>
           <ProjectCard
-            title="Exnovias"
-            description="Proyecto Músical donde colaboro con diferentes artistas en cada lanzamiento."
-            href="https://open.spotify.com/artist/66iTeAao7hsxEHLlB8I418?si=mbf6jUjjQEetR5Yg-mACjA"
-            imageUrl="/static/images/exnoviaslogo.jpg"
+            title="Proyectos Musicales"
+            description="Algunos de los proyectos musicales donde me he involucrado de alguna u otra manera."
+            href="/music"
+            target=""
+            imageUrl="/static/images/musiccovers/chiptunelife.jpg"
 
           />
           <br />
