@@ -6,9 +6,6 @@ import BlogImage from '@/components/BlogImage';
 import SoundCloudPlayer from '@/components/SoundCloudPlayer';
 import ProsCard from '@/components/ProsCard';
 import ConsCard from '@/components/ConsCard';
-import Gumroad from '@/components/metrics/Gumroad';
-import Unsplash from '@/components/metrics/Unsplash';
-import YouTube from '@/components/metrics/Youtube';
 import Step from '@/components/Step';
 
 const CustomLink = (props) => {
@@ -32,12 +29,8 @@ const MDXComponents = {
   SoundCloudPlayer,
   a: CustomLink,
   ConsCard,
-  Gumroad,
   ProsCard,
   Step,
-  Tweet,
-  Unsplash,
-  YouTube
 };
 
 export default MDXComponents;
