@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import BlogImage from '@/components/BlogImage';
+import BlogVideo from '@/components/BlogVideo';
 import SoundCloudPlayer from '@/components/SoundCloudPlayer';
 import ProsCard from '@/components/ProsCard';
 import ConsCard from '@/components/ConsCard';
@@ -25,6 +26,7 @@ const CustomLink = (props) => {
 const MDXComponents = {
   Image,
   BlogImage,
+  BlogVideo,
   SoundCloudPlayer,
   a: CustomLink,
   ConsCard,
