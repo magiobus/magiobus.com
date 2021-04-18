@@ -26,16 +26,13 @@ const Event = ({ title, place, type, children }) => {
 
         {type === 'mentor' && (<p>🤓 &nbsp;</p>)}
 
-        {type === 'organizer' && ( <p>🤓 &nbsp;</p> )}
+        {type === 'organizer' && (<p>🤓 &nbsp;</p>)}
 
         {type === 'organizer/mentor' && (<p>🤓 &nbsp;</p>)}
 
         {type === 'workshop' && (<p>🔧  &nbsp;</p>)}
 
         {type === 'musicperformance' && (<p>🎹  &nbsp;</p>)}
-
-
-        
 
         <p className="font-medium text-gray-900 dark:text-gray-100">{title} - {place} ({type}) </p>
       </div>
@@ -51,13 +48,15 @@ export default function Events() {
     <>
       <Year>2021</Year>
       <ul>
+        <Event title="Startup Weekend Social Innovation" place="Online" type="mentor"></Event>
+        <Event title="TechNovation Girls" place="Online" type="mentor">Coding mentor for 6 weeks.</Event>
       </ul>
       <Divider />
       <Year>2020</Year>
       <ul>
         <Event title="Iweek CUU Hackathon" place="Online" type="organizer/mentor"></Event>
         <Event title="BackToCouch VideoGames Conf" place="Chihuahua MX" type="attended"></Event>
-        <Event title="Escuela Microscopia CIMAV" place="Chihuahua MX" type="attended">I helped organize an online microscopy event.</Event>
+        <Event title="Escuela Microscopia CIMAV" place="Chihuahua MX" type="attended">I helped to organize an online microscopy event.</Event>
         <Event title="Molus.co Podcast Workshop" place="Online" type="workshop"></Event>
       </ul>
       <Divider />
@@ -65,7 +64,7 @@ export default function Events() {
       <ul>
         <Event title="Thunderstruck" place="Monterrey MX" type="attended">Videogames tournament, I covered the event via streaming with The New Game Order Crew</Event>
         <Event title="Casas Grandes University" place="Casas Grandes MX" type="talk"></Event>
-        <Event title="Encuentro Juventudes Ichijuv" place="Chihuahua MX" type="talk">I gave a couple of talks around the state of Chihuahua</Event>
+        <Event title="Encuentro Juventudes Ichijuv" place="Chihuahua MX" type="talk">I gave a couple of talks and magic shows around the state of Chihuahua</Event>
         <Event title="Border Tech" place="Juarez MX" type="talk">I put a stand with The New Game Order about streaming videogames.</Event>
         <Event title="Indies MX" place="Juarez MX" type="talk">I gave a talk with The New Game Order about videogames industry.</Event>
         <Event title="Tapalpa Magik" place="Tapalpa MX" type="attended">Magic Event Convention in Tapalpa Jalisco.</Event>

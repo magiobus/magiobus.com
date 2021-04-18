@@ -27,7 +27,7 @@ export default function About() {
           </p>
           <p>
             Crecí en una ciudad pequeña cercana a la frontera con Estados Unidos llamada Chihuahua México,
-            ahí estudié la universidad y me gradué de ingeniería en sistemas computacionales. 
+            ahí estudié la universidad y me gradué de ingeniería en sistemas computacionales.
             Desde entonces siempre he estado envuelto en temás de tecnología y emprendimiento.
           </p>
 
@@ -44,9 +44,9 @@ export default function About() {
             Mi tiempo libre lo paso jugando videojuegos, haciendo música y aprendiendo siempre algo nuevo.
           </p>
         </div>
-        
-       
-       <div id="projects">
+
+
+        <div id="projects">
           <h2 className="font-bold text-3xl tracking-tight mb-4 text-black dark:text-white">
             Proyectos
           </h2>
@@ -56,7 +56,7 @@ export default function About() {
             href="https://molus.co/"
             imageUrl="/static/images/moluscologo.jpg"
           />
-          <br/>
+          <br />
           <ProjectCard
             title="The New Game Order"
             description="Comunidad de Videojuegos y cultura geek con diversos contenidos entre ellos un liveshow semanal."
@@ -64,7 +64,7 @@ export default function About() {
             imageUrl="/static/images/tngologo.jpg"
 
           />
-          <br/>
+          <br />
           <ProjectCard
             title="Proyectos Musicales"
             description="Algunos de los proyectos musicales donde me he involucrado de alguna u otra manera."
@@ -80,8 +80,8 @@ export default function About() {
             href="https://trabajoschihuahua.com/"
             imageUrl="/static/images/trabajoschihuahualogo.png"
           />
-       </div>
-       
+        </div>
+
       </div>
     </Container>
   );
