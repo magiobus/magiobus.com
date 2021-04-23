@@ -19,7 +19,7 @@ export default function About() {
           <Link href="mailto:magio@magiobus.com"><a>Email ✉️</a></Link>
           </p>
         </div>
-        
+
 
         <div className="flex flex-row flex-wrap justify-around w-full ">
           <MusicItem
@@ -74,7 +74,7 @@ export default function About() {
             title="Sofia Trenti - La Atracción"
             year="2019"
             credit="Recording, Production"
-            href="https://sofatrenti.bandcamp.com/track/la-atracci-n"
+            href="https://open.spotify.com/track/1XOUkwShJQvEnYdXY1fC1M?si=nct9pWzaRjGMhP2MhqrmVg"
             imageUrl="/static/images/musiccovers/laatraccion.jpg"
           />
 
@@ -118,9 +118,9 @@ export default function About() {
             imageUrl="/static/images/musiccovers/chiptunelife.jpg"
           />
 
-         
+
         </div>
-       
+
       </div>
     </Container>
   );
